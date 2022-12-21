@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../jquery_v3-6-2.js"></script>
+    <title>SandBox</title>
+</head>
+<body>
+    
+
+    <script>
+        $(() => {
+            $('<img>', {
+                src: './red_panda.jpg',
+                alt: 'red panda',
+                title: 'red panda on tree',
+                width: 750,
+                height: 750,
+                click: function() {
+                    alert($(this).attr('title'))
+                }
+            }).css({
+                cursor: 'pointer',
+                border: '1px solid black',
+                padding: '12px 12px 20px 12px',
+                backgroundColor: 'white'
+            }).appendTo('body')
+        })
+    </script>
+</body>
+</html>
