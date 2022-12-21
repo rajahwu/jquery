@@ -34,5 +34,5 @@ function AppContainer() {
 }
 
 function MainLayout() {
-    AppContainer()
+    AppContainer();
 }
